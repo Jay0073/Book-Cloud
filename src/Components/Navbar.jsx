@@ -54,7 +54,7 @@ const Navbar = () => {
           <ul className="hidden md:flex items-center justify-center flex-1 space-x-8">
             <li onClick={() => {setMenu("home");}}><Link to='/' style={{textDecoration:'none', color:'white'}}>Home</Link>{menu === "home" ? <hr /> : <></>}</li>
             <li onClick={() => {setMenu("library");}}><Link to='/library' style={{textDecoration:'none', color:'white'}}>My Library</Link>{menu === "library" ? <hr /> : <></>}</li>
-            <li onClick={() => {setMenu("catalog");}}><Link to='/catalog' style={{textDecoration:'none', color:'white'}}>Catalog</Link>{menu === "catalog" ? <hr /> : <></>}</li>
+            <li onClick={() => {setMenu("explore");}}><Link to='/explore' style={{textDecoration:'none', color:'white'}}>Explore</Link>{menu === "explore" ? <hr /> : <></>}</li>
           </ul>
 
           {/* Desktop Right Section */}
@@ -130,7 +130,7 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <MobileNavLink href="/" text="Home" />
             <MobileNavLink href="/library" text="My Library" />
-            <MobileNavLink href="/catalog" text="Catalog" />
+            <MobileNavLink href="/explore" text="explore" />
 
             {/* Mobile Search */}
             <div className="relative mt-4 px-2">

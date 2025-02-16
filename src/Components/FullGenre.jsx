@@ -1,16 +1,15 @@
-import React from "react";
-import BookCard from "../Components/BookCard";
+import React from 'react'
+import BookCard from '../Components/BookCard'
 
-const Mylibrary = () => {
-  
-
+const FullGenre = () => {
   return (
-      <div className="py-10 bg-gray-50 dark:bg-gray-900">
+    <div>
+      <div className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            My Library
+            Romance
           </h2>
           <div className="w-20 h-1 bg-indigo-600 mx-auto rounded-full"></div>
         </div>
@@ -37,7 +36,8 @@ const Mylibrary = () => {
         </div>
       </div>
     </div>
-  );
-};
+    </div>
+  )
+}
 
-export default Mylibrary;
+export default FullGenre
