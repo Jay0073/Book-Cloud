@@ -1,5 +1,6 @@
 import React from 'react'
 import BookSlider from '../Components/BookSlider';
+import Footer from '../Components/Footer';
 
 const Explore = () => {
     
@@ -9,6 +10,7 @@ const Explore = () => {
       <BookSlider />
       <BookSlider />
       <BookSlider />
+      <Footer />
     </>
   );
   

@@ -15,7 +15,7 @@ const BookCard = () => {
   return (
     <div className="
       relative 
-      bg-white dark:bg-gray-800 
+      bg-white dark:bg-gray-900/50
       rounded-2xl 
       overflow-hidden
       shadow-[0_8px_30px_rgba(0,0,0,0.08)]
