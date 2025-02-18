@@ -55,6 +55,7 @@ const Navbar = () => {
             <li onClick={() => {setMenu("home");}}><Link to='/' style={{textDecoration:'none', color:'white'}}>Home</Link>{menu === "home" ? <hr /> : <></>}</li>
             <li onClick={() => {setMenu("library");}}><Link to='/library' style={{textDecoration:'none', color:'white'}}>My Library</Link>{menu === "library" ? <hr /> : <></>}</li>
             <li onClick={() => {setMenu("explore");}}><Link to='/explore' style={{textDecoration:'none', color:'white'}}>Explore</Link>{menu === "explore" ? <hr /> : <></>}</li>
+            <li onClick={() => {setMenu("aboutus");}}><Link to='/about' style={{textDecoration:'none', color:'white'}}>About Us</Link>{menu === "aboutus" ? <hr /> : <></>}</li>
           </ul>
 
           {/* Desktop Right Section */}
