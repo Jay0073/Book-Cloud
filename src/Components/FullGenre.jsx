@@ -30,9 +30,6 @@ const FullGenre = () => {
           <BookCard />
           <BookCard />
           <BookCard />
-          <BookCard />
-          <BookCard />
-          <BookCard />
         </div>
       </div>
     </div>

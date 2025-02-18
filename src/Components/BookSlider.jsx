@@ -3,16 +3,17 @@ import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import BookCard from '../Components/BookCard'
 
 const BookSlider = () => {
-
-    const scrollLeft = () => {
-        const slider = document.getElementById('book-slider');
-        slider.scrollLeft -= slider.offsetWidth;
-      };
-    
       const scrollRight = () => {
         const slider = document.getElementById('book-slider');
         slider.scrollLeft += slider.offsetWidth;
       };
+
+
+      const scrollLeft = () => {
+        const slider = document.getElementById('book-slider');
+        slider.scrollLeft -= slider.offsetWidth;
+      };
+    
 
   return (
       <div className="py-8 bg-gray-50 dark:bg-gray-900">
@@ -74,6 +75,8 @@ const BookSlider = () => {
               WebkitOverflowScrolling: 'touch'
             }}
           >
+            <BookCard />
+            <BookCard />
             <BookCard />
             <BookCard />
             <BookCard />
