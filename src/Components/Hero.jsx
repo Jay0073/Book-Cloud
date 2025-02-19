@@ -12,6 +12,7 @@ import {
   BookMarked,
   Bookmark,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FloatingIcon = ({ icon: Icon, delay, color, rotate, scale }) => (
   <div
@@ -116,7 +117,9 @@ const Hero = () => {
             "
             >
               <BookOpen className="h-5 w-5 mr-2" />
+              <Link to="/library">
               Browse Library
+              </Link> 
             </button>
 
             <button

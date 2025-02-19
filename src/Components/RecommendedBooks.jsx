@@ -15,7 +15,7 @@ const RecommendedBooks = () => {
       };
 
   return (
-      <div className="py-10 bg-gray-50 dark:bg-gray-800 relative">
+      <div className="py-10 bg-gray-50 dark:bg-gray-900 relative">
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Title */}
         <div className="text-center mb-16">

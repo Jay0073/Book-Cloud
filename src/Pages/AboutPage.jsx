@@ -2,15 +2,12 @@ import React from "react";
 import { 
   BookOpen, 
   BookMarked, 
-  BookText, 
   Layout, 
   Users, 
   Search,
   Clock,
   BookmarkCheck,
-  BookOpenCheck,
   Cloud,
-  Bookmark,
   Shield,
   HeartHandshake,
   Sparkles,
@@ -95,7 +92,7 @@ const AboutPage = () => {
                 description: "Track your reading progress and set reading goals"
               },
               {
-                icon: Clock,
+                icon: Users,
                 title: "Multi-device Sync",
                 description: "Seamlessly switch between devices while reading"
               },
