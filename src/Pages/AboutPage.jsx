@@ -14,9 +14,10 @@ import {
   Shield,
   HeartHandshake,
   Sparkles,
-  TrendingUp
+  TrendingUp,
 } from "lucide-react";
 import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   return (
@@ -200,6 +201,8 @@ const AboutPage = () => {
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
             Join thousands of readers who have already discovered the joy of digital reading with Book Cloud.
           </p>
+          
+          
           <button className="
             px-8 py-4
             bg-white dark:bg-gray-900
@@ -210,8 +213,11 @@ const AboutPage = () => {
             transition-colors duration-300
             shadow-lg
           ">
+            <Link to="/explore">
             Get Started Now
+            </Link>
           </button>
+          
         </div>
       </section>
       <Footer />
