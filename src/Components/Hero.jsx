@@ -219,7 +219,6 @@ const style = `
       transform: translateY(-20px) rotate(5deg);
     }
   }
-  
   .animate-float {
     animation: float 6s ease-in-out infinite;
   }
