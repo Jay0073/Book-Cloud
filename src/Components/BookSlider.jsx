@@ -16,7 +16,7 @@ const BookSlider = () => {
     
 
   return (
-      <div className="py-8 bg-gray-50 dark:bg-gray-900">
+      <div className="py-8 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Title */}
         <div className="flex justify-between items-center mb-12">
