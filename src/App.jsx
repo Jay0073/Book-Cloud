@@ -3,6 +3,8 @@ import Home from "./Pages/Home";
 import Mylibrary from "./Pages/Mylibrary";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
+import FullGenre from "./Components/FullGenre";
+import BookPage from "./Pages/BookPage";
 import Explore from "./Pages/Explore";
 import AboutPage from "./Pages/AboutPage";
 import NotFound from "./Pages/NotFound";
@@ -17,7 +19,8 @@ function App() {
           <Route path="/library" element={<Mylibrary />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/about" element={<AboutPage />} />
-
+          <Route path="/genre/:id" element={<FullGenre />} />
+          <Route path="/book/:id" element={<BookPage />} />
           
           <Route path="/*" element={<NotFound />} />
         </Routes>

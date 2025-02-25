@@ -1,6 +1,7 @@
 import React from "react";
 import { BookX, Home, MoveLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import './CSS/Notfound.css'
 
 const NotFound = () => {
   const navigate = useNavigate();
@@ -92,30 +93,6 @@ const NotFound = () => {
         </div>
       </div>
 
-      {/* CSS Animations */}
-      <style jsx>{`
-        @keyframes slideRight {
-          0% {
-            transform: translateX(0%);
-          }
-          100% {
-            transform: translateX(400%);
-          }
-        }
-
-        @keyframes float {
-          0%, 100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-20px);
-          }
-        }
-
-        .animate-float {
-          animation: float 3s ease-in-out infinite;
-        }
-      `}</style>
     </div>
   );
 };

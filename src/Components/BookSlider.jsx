@@ -1,6 +1,7 @@
 import React from 'react'
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import BookCard from '../Components/BookCard'
+import { Link } from 'react-router-dom';
 
 const BookSlider = () => {
       const scrollRight = () => {
@@ -85,7 +86,7 @@ const BookSlider = () => {
             <BookCard />
             
             {/* See More Card */}
-            <div className="
+            <Link to='/genre/:id' className="
               min-w-[280px] /* Match BookCard width */
               flex flex-col items-center justify-center
               bg-gradient-to-r from-indigo-500 to-indigo-600
@@ -97,6 +98,7 @@ const BookSlider = () => {
               transition-transform duration-300
               hover:scale-105
             ">
+              
               <ArrowRight className="w-12 h-12 text-white mb-4 
                 transform group-hover:translate-x-2 transition-transform duration-300" 
               />
@@ -104,7 +106,7 @@ const BookSlider = () => {
               <p className="text-white/80 text-sm text-center">
                 Discover our complete collection
               </p>
-            </div>
+              </Link>
           </div>
         </div>
       </div>

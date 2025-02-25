@@ -1,6 +1,7 @@
 import React from "react";
 import { Eye, BookOpen, Tag } from "lucide-react";
 import midnightlibrary from '../assets/midnight-library.jpg'
+import { Link } from "react-router-dom";
 
 const BookCard = () => {
   const book = {
@@ -15,7 +16,7 @@ const BookCard = () => {
   return (
     <div className="
       relative 
-      bg-white dark:bg-gray-900/50
+      bg-white dark:bg-gray-800/50
       rounded-2xl 
       overflow-hidden
       shadow-[0_8px_30px_rgba(0,0,0,0.08)]
@@ -108,6 +109,8 @@ const BookCard = () => {
         </p>
 
         {/* View Button */}
+        
+        <Link to="/book/1">
         <button className="
           w-full
           px-4 py-2
@@ -123,6 +126,7 @@ const BookCard = () => {
           <BookOpen className="w-4 h-4" />
           <span>View Details</span>
         </button>
+          </Link>
       </div>
     </div>
   );

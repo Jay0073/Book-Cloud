@@ -130,6 +130,29 @@ const AboutPage = () => {
         </div>
       </section>
 
+       {/* Testimonials Section */}
+       <section className="py-20 bg-white dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12">
+            What Our Readers Say
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {["Absolutely love the app! It's changed how I read books.",
+              "A seamless reading experience across all my devices.",
+              "Great collection and the smart search is a game-changer!"]
+              .map((testimonial, index) => (
+                <div key={index} className=" bg-white dark:bg-gray-800 
+                  p-8 rounded-2xl
+                  shadow-lg hover:shadow-xl
+                  transition-all duration-300
+                  border border-gray-100 dark:border-gray-700">
+                  <p className="text-gray-600 dark:text-gray-300">"{testimonial}"</p>
+                </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       {/* CTA Section */}
       <section className="py-20 bg-gray-900 dark:bg-gray-800">
@@ -148,17 +171,19 @@ const AboutPage = () => {
             text-indigo-600 dark:text-indigo-400
             rounded-xl
             font-semibold
-            hover:bg-gray-50 dark:hover:bg-gray-800
+            hover:bg-gray-50 dark:hover:bg-gray-700
             transition-colors duration-300
             shadow-lg
           ">
             <Link to="/explore">
             Get Started Now
             </Link>
-          </button>
+          </button> 
           
         </div>
       </section>
+
+     
       <Footer />
     </div>
   );

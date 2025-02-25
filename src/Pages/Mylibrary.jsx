@@ -5,7 +5,7 @@ const Mylibrary = () => {
   
 
   return (
-      <div className="py-10 bg-gray-50 dark:bg-gray-900">
+      <div className="py-10 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Title */}
         <div className="text-center mb-16">

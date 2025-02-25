@@ -60,25 +60,27 @@ const RecommendedBooks = () => {
 
           {/* Navigation Buttons (Hidden on Mobile) */}
           <button
-            onClick={scrollLeft}
-            className="absolute left-0 top-1/2 -translate-y-1/2 p-2 
-                bg-indigo-600 hover:bg-indigo-700
-                dark:bg-indigo-500 dark:hover:bg-indigo-600
-                border border-gray-600 dark:border-gray-700 shadow-md
-                transition-all duration-300 z-10 hidden sm:flex"
-          >
-            <ChevronLeft className="w-8 h-8 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400" />
-          </button>
-
-          <button
-            onClick={scrollRight}
-            className="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-10
-              bg-indigo dark:bg-indigo-800 border border-gray-600 dark:border-gray-700 shadow-md
-              hover:bg-indigo-100 dark:hover:bg-gray-700 transition-all duration-300 z-10
-              hidden sm:flex"
-          >
-            <ChevronRight className="w-8 h-8 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400" />
-          </button>
+                      onClick={scrollLeft}
+                      className="absolute left-3 top-1/2 -translate-y-1/2 p-2 rounded-full
+                          bg-indigo-600 hover:bg-indigo-700
+                          dark:bg-indigo-700 dark:hover:bg-indigo-800 border border-indigo-500 dark:border-indigo-600 
+                          shadow-lg
+                          transition-transform duration-300 z-10 hidden sm:flex"
+                    >
+                      <ChevronLeft className="w-8 h-8 text-white" />
+                    </button>
+          
+                    <button
+                      onClick={scrollRight}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full
+                         bg-indigo-600 hover:bg-indigo-700
+                          dark:bg-indigo-700 dark:hover:bg-indigo-800 border border-indigo-500 dark:border-indigo-600 
+                        transition-transform duration-300 z-10
+                        shadow-lg
+                        hidden sm:flex"
+                    >
+                      <ChevronRight className="w-8 h-8 text-white" />
+                    </button>
         </div>
       </div>
     </div>
