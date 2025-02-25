@@ -12,7 +12,7 @@ const Discover = () => {
           bg-white dark:bg-gray-900/80
           rounded-3xl
           p-8 md:p-12
-          shadow-xl dark:shadow-2xl shadow-indigo-100 dark:shadow-none
+          shadow-xl shadow-indigo-100 dark:shadow-none
           border border-indigo-50 dark:border-gray-700
         ">
           {/* Left Content */}
