@@ -52,10 +52,10 @@ const Navbar = () => {
 
           {/* Desktop Navigation Links */}
           <ul className="hidden md:flex items-center justify-center flex-1 space-x-8">
-            <li onClick={() => {setMenu("home");}}><Link to='/' style={{textDecoration:'none', color:'white'}}>Home</Link>{menu === "home" ? <hr /> : <></>}</li>
-            <li onClick={() => {setMenu("library");}}><Link to='/library' style={{textDecoration:'none', color:'white'}}>My Library</Link>{menu === "library" ? <hr /> : <></>}</li>
-            <li onClick={() => {setMenu("explore");}}><Link to='/explore' style={{textDecoration:'none', color:'white'}}>Explore</Link>{menu === "explore" ? <hr /> : <></>}</li>
-            <li onClick={() => {setMenu("aboutus");}}><Link to='/about' style={{textDecoration:'none', color:'white'}}>About Us</Link>{menu === "aboutus" ? <hr /> : <></>}</li>
+            <li onClick={() => {setMenu("home");window.scrollTo(0, 0);}}><Link to='/' style={{textDecoration:'none', color:'white'}}>Home</Link>{menu === "home" ? <hr /> : <></>}</li>
+            <li onClick={() => {setMenu("library");window.scrollTo(0, 0);}}><Link to='/library' style={{textDecoration:'none', color:'white'}}>My Library</Link>{menu === "library" ? <hr /> : <></>}</li>
+            <li onClick={() => {setMenu("explore");window.scrollTo(0, 0);}}><Link to='/explore' style={{textDecoration:'none', color:'white'}}>Explore</Link>{menu === "explore" ? <hr /> : <></>}</li>
+            <li onClick={() => {setMenu("aboutus");window.scrollTo(0, 0);}}><Link to='/about' style={{textDecoration:'none', color:'white'}}>About Us</Link>{menu === "aboutus" ? <hr /> : <></>}</li>
           </ul>
 
           {/* Desktop Right Section */}
@@ -66,14 +66,14 @@ const Navbar = () => {
                 type="text"
                 placeholder="Search eBooks..."
                 className={`
-                w-48 px-4 py-2 rounded-lg
+                min-w-58 px-4 py-2 rounded-lg
                 bg-gray-100 dark:bg-gray-800
                 text-gray-700 dark:text-gray-300
                 border border-transparent
                 focus:border-indigo-500 dark:focus:border-indigo-400
                 focus:ring-2 focus:ring-indigo-200 dark:focus:ring-indigo-800
                 focus:outline-none
-                transition-all duration-200
+                transition-all duration-200 pr-8
               `}
               />
               <Search className="absolute right-3 top-2.5 h-5 w-5 text-gray-400" />
@@ -144,7 +144,7 @@ const Navbar = () => {
                 text-gray-700 dark:text-gray-300
                 border border-transparent
                 focus:border-indigo-500 dark:focus:border-indigo-400
-                focus:outline-none
+                focus:outline-none 
               "
               />
               <Search className="absolute right-5 top-2.5 h-5 w-5 text-gray-400" />
