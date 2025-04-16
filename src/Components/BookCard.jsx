@@ -121,8 +121,8 @@ const BookCard = () => {
           flex items-center justify-center gap-2
           font-medium
           transition-colors duration-300
-          text-sm
-        ">
+          text-sm"
+          onClick={() => {window.scrollTo(0, 0)}}>
           <BookOpen className="w-4 h-4" />
           <span>View Details</span>
         </button>

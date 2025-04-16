@@ -1,10 +1,9 @@
-import React from 'react'
-import BookDetail from '../Components/BookDetail'
-import AuthorSection from '../Components/AuthorSection'
-import Footer from '../Components/Footer'
-import SimilarBooks from '../Components/SimilarBooks'
-import FeaturedBooks from '../Components/FeaturedBooks'
-import ReviewSection from '../Components/ReviewSection'
+import React from "react";
+import BookDetail from "../Components/BookDetail";
+import AuthorSection from "../Components/AuthorSection";
+import Footer from "../Components/Footer";
+import ReviewSection from "../Components/ReviewSection";
+import BookSlider from "../Components/BookSlider";
 
 const BookPage = () => {
   return (
@@ -12,11 +11,11 @@ const BookPage = () => {
       <BookDetail />
       <AuthorSection />
       <ReviewSection />
-      <SimilarBooks />
-      <SimilarBooks />
+      <BookSlider title="Similar Books" />
+      <BookSlider title="Similar Genre" />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default BookPage
+export default BookPage;

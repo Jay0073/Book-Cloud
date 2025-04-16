@@ -1,12 +1,11 @@
-import React from 'react'
-import Hero from '../Components/Hero'
-import PopularGenres from '../Components/PopularGenres'
-import FeaturedBooks from '../Components/FeaturedBooks'
-import RecommendedBooks from '../Components/RecommendedBooks'
-import Discover from '../Components/Discover'
-import Footer from '../Components/Footer'
-import Features from '../Components/Features'
-import Advantages from '../Components/Advantages'
+import React from "react";
+import Hero from "../Components/Hero";
+import PopularGenres from "../Components/PopularGenres";
+import BookHomeSlider from "../Components/BookHomeSlider";
+import Discover from "../Components/Discover";
+import Footer from "../Components/Footer";
+import Features from "../Components/Features";
+import Advantages from "../Components/Advantages";
 
 const Home = () => {
   return (
@@ -14,13 +13,13 @@ const Home = () => {
       <Hero />
       <PopularGenres />
       <Features />
+      <BookHomeSlider title="Featured Books"/>
+      <BookHomeSlider title="Recommended Books" />
       <Advantages />
-      <FeaturedBooks />
-      <RecommendedBooks />
       <Discover />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
