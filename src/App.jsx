@@ -8,6 +8,7 @@ import BookPage from "./Pages/BookPage";
 import Explore from "./Pages/Explore";
 import AboutPage from "./Pages/AboutPage";
 import NotFound from "./Pages/NotFound";
+import AuthPage from "./Pages/AuthPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/authpage" element={<AuthPage />} />
           <Route path="/library" element={<Mylibrary />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/about" element={<AboutPage />} />

@@ -80,18 +80,20 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Sign In Button */}
+            <Link to="/authpage" style={{ textDecoration: "none", color: "white" }}>
             <button
               className="
             flex items-center px-4 py-2 rounded-lg
             bg-indigo-600 hover:bg-indigo-700
             dark:bg-indigo-500 dark:hover:bg-indigo-600
             text-white font-medium
-            transition duration-150 ease-in-out
+            transition duration-150 ease-in-out cursor-pointer
           "
             >
               <CircleUserIcon className="h-7 w-7 mr-2" />
-              Sign In
+                Sign In
             </button>
+              </Link>
           </div>
 
           {/* Mobile Right Section */}

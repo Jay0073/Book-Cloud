@@ -1,18 +1,18 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 const {
   getAllBooks,
   getBookById,
-  addBook
-} = require('../controllers/bookController');
+  addBook,
+} = require("../controllers/bookController");
 
 // GET /api/books
-router.get('/', getAllBooks);
+router.get("/", getAllBooks);
 
 // GET /api/books/:id
-router.get('/:id', getBookById);
+router.get("/:id", getBookById);
 
 // POST /api/books
-router.post('/', addBook);
+router.post("/", addBook);
 
 module.exports = router;
