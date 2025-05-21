@@ -58,10 +58,35 @@ Secure and scalable backend with Node.js and Express.
 
 ---
 
-## 📂 Folder Structure
+## 📁 Project Structure
 
+A clean full-stack architecture separated into `frontend` and `backend` for better maintainability and scalability.
 
+```
+book-cloud/
+├── backend/ # Node.js + Express backend
+│ ├── auth/ # JWT authentication logic
+│ ├── config/ # Database connection
+│ ├── Controllers/ # Book, user, and review logic
+│ ├── models/ # Mongoose schemas
+│ ├── routes/ # API route handlers
+│ ├── .env # Environment variables
+│ └── index.js # Backend entry point
 
+├── public/ # Static frontend assets
+
+├── src/ # React frontend
+│ ├── Components/ # Reusable UI components
+│ ├── Pages/ # Main views/pages
+│ ├── assets/ # Images and logos
+│ ├── App.jsx # Root component
+│ └── main.jsx # Entry point
+
+├── index.html # Frontend HTML template
+├── package.json # Frontend dependencies
+├── vite.config.js # Vite configuration
+└── README.md # Project documentation
+```
 ---
 
 ## 🚀 Getting Started
