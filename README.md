@@ -24,34 +24,19 @@ The platform features a **beautiful and user-friendly UI**, clean navigation, an
 
 ## 🛠️ Tech Stack
 
-A modern full-stack web application built using the **MERN** architecture with a focus on performance, design, and scalability.
+Modern full-stack app built on the **MERN** stack with optimized tooling, clean code, and responsive design.
 
 ### 🌐 Frontend
-Built with React and styled using Tailwind CSS for rapid UI development.
-
-- **React 19** – UI library for building responsive interfaces  
-- **React Router DOM v7** – Client-side routing  
-- **Tailwind CSS v4** – Utility-first CSS for beautiful design  
-- **Lucide React** – Icon pack for consistent UI elements  
-- **Vite** – Lightning-fast dev server and build tool  
-- **ESLint + Plugins** – Code linting and formatting for cleaner development  
+- **React 19**, **React Router v7** – UI and routing  
+- **Tailwind CSS v4**, **Lucide React** – Styling & icons  
+- **Vite** – Fast dev/build tool  
+- **ESLint + TypeScript types** – Code quality & type safety
 
 ### 🔧 Backend
-Secure and scalable backend with Node.js and Express.
-
-- **Express 5** – Minimal and powerful Node.js web framework  
-- **MongoDB + Mongoose** – NoSQL database with schema modeling  
-- **JWT** – JSON Web Tokens for authentication  
-- **bcryptjs** – Password hashing for user security  
-- **dotenv** – Secure environment variable handling  
-- **CORS** – Cross-origin resource sharing support  
-- **Colors** – CLI color formatting for better logging  
-
-### 📦 Dev Tools & Build
-- **Vite CLI** – Fast builds and optimized production output  
-- **ESLint Configs** – JS & React linting  
-- **Type Definitions** – React & DOM type safety  
-- **Globals** – Recognized global variables for linting compatibility  
+- **Node.js + Express 5** – RESTful API server  
+- **MongoDB + Mongoose** – Database & schema modeling  
+- **JWT**, **bcryptjs** – Auth & password hashing  
+- **dotenv**, **CORS**, **colors** – Env config, API access, logging
 
 > ⚙️ All dependencies are kept up-to-date to ensure performance, security, and smooth developer experience.
 
